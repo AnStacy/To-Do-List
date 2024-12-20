@@ -22,7 +22,7 @@ body {
 
   .container_todo-list {
     background-color: #d8d6dc;
-    width: 95%;
+    width: 85%;
     height: 60%;
     border-radius: 20px;
 
@@ -129,16 +129,5 @@ body {
         }
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    min-width: 768px;
-    width: 30%;
-  }
-
-  .container_todo-list {
-    width: 90%;
   }
 }
