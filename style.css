@@ -13,16 +13,16 @@ body {
 }
 
 .container {
-  width: 1200px;
+  min-width: 480px;
   margin: 20px auto;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* padding: 10px; */
 
   .container_todo-list {
     background-color: #d8d6dc;
-    width: 80%;
+    width: 95%;
     height: 60%;
     border-radius: 20px;
 
@@ -42,7 +42,7 @@ body {
 
     .container-input {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       display: flex;
       justify-content: center;
 
@@ -72,7 +72,7 @@ body {
     }
 
     .container-tasks {
-      margin: 0 95px;
+      margin: 0 5px;
 
       .tasks-list {
         list-style: none;
@@ -129,5 +129,16 @@ body {
         }
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    width: 30%;
+  }
+
+  .container_todo-list {
+    width: 90%;
   }
 }
