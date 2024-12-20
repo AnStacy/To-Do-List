@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DotGothic16&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+  background-color: #bebbc5;
+  color: #333;
+}
+
+.container {
+  width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container_todo-list {
+    background-color: #d8d6dc;
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+
+    .container_title {
+      font-size: 50px;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .container_date {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #626364;
+    }
+
+    .container-input {
+      display: flex;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      .task_input {
+        color: #333;
+        font-size: 20px;
+        padding: 12px 12px;
+        border-radius: 6px;
+        background-color: #ffffff;
+        border: none;
+        width: 70%;
+        margin-right: 30px;
+        margin-bottom: 20px;
+      }
+
+      .task_input-button {
+        font: inherit;
+        background-color: #f0f0f0;
+        border: 0;
+        border-radius: 6px;
+        font-size: 1.2rem;
+        padding: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+    }
+
+    .container-tasks {
+      margin: 0 95px;
+
+      .tasks-list {
+        list-style: none;
+
+        .tasks-list_item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #fff;
+          margin: 20px 20px;
+          padding: 10px;
+          border-radius: 6px;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+        }
+
+        .tasks-button {
+          font-weight: 600px;
+          font-size: 20px;
+          border: none;
+          padding: 7px;
+          box-shadow: 3px 3px 3px #888888;
+          background-color: #f0f0f0;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+
+        .checkbox-unchecked {
+          background-image: url("./image/unchecked.png");
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+          background-size: cover;
+          cursor: pointer;
+        }
+
+        .checkbox-checked {
+          background-image: url("./image/checked.png");
+          width: 30px;
+          height: 30px;
+          margin-right: 20px;
+          background-size: cover;
+          cursor: pointer;
+        }
+
+        .tasks-list_item.completed span {
+          text-decoration: line-through;
+          color: #a1a1a1;
+        }
+      }
+    }
+  }
+}
