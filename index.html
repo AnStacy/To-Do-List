@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <div class="container">
-      <div class="burger-menu">
-        <div class="burger-icon"></div>
-        <div class="burger-icon"></div>
-        <div class="burger-icon"></div>
-      </div>
       <div class="container_sidebar">
         <div class="sidebar">
           <header class="sidebar_header">
-            <input type="text" id="folder-search" placeholder="Folder name" />
-            <button id="add-folder-btn">Add</button>
+            <input
+              class="header_input"
+              type="text"
+              id="folder-search"
+              placeholder="Folder name"
+            />
+            <button class="header_btn" id="add-folder-btn">Add</button>
           </header>
           <ul id="folder-list" class="folder-list"></ul>
         </div>

@@ -1,0 +1,96 @@
+.container_sidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px 20px 10px;
+  flex: 0 0 15%;
+
+  .sidebar {
+    background-color: var(--sidebar-background-color);
+    padding: 15px;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .sidebar_header {
+      .header_input {
+        font-size: 12px;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--input-background-color);
+        margin-bottom: 5px;
+        padding: 7px;
+
+        @media (min-width: 768px) {
+          font-size: 17px;
+        }
+      }
+
+      .header_input:focus {
+        outline: none;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .header_btn {
+        font-size: 12px;
+        border: none;
+        border-radius: 6px;
+        width: 100%;
+        padding: 5px;
+        background-color: var(--btn-background-color);
+        transition: background-color 0.2s;
+        cursor: pointer;
+        margin-bottom: 25px;
+
+        @media (min-width: 768px) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
+  .folder-list {
+    list-style: none;
+    overflow-y: auto;
+    flex: 1;
+
+    .folder-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--folder-background-color);
+      margin: 10px 0;
+      padding: 7px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      animation: slideIn 0.3s ease;
+
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    .folder-item:hover {
+      background-color: var(--folder-hover-background-color);
+    }
+
+    .folder-item.active {
+      background-color: var(--folder-active-background-color);
+      color: var(--folder-active-text-color);
+    }
+  }
+
+  .folder-delete {
+    background-color: var(--btn-background-color);
+    border: none;
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      font-size: 15px;
+    }
+  }
+}

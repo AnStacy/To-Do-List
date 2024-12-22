@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DotGothic16&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+:root {
+  --body-background-color: #bebbc5;
+  --background-color: #333;
+  --todo-list-background-color: #d8d6dc;
+  --input-background-color: #ffffff;
+  --btn-background-color: #f0f0f0;
+  --task-background-color: #ffffff;
+  --line-through-color: #a1a1a1;
+  --sidebar-background-color: #aba8b1;
+  --folder-background-color: #ffffff;
+  --folder-hover-background-color: #f1f1f1;
+  --folder-active-background-color: #5f5d62;
+  --folder-active-text-color: #ffffff;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  gap: 0;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--background-color);
+}
+
+.folder-list,
+.tasks-list {
+  flex-grow: 1;
+  overflow-y: visible;
+}

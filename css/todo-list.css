@@ -1,0 +1,161 @@
+.container_todo-list {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px 20px 0;
+  flex: 1;
+
+  .todo-list {
+    background-color: var(--todo-list-background-color);
+    border-radius: 0 12px 12px 0;
+    width: 100%;
+
+    .todo-list_title {
+      font-size: 40px;
+      text-align: center;
+      padding-top: 50px;
+
+      @media (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+
+    .todo-list_date {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 40px;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .todo-list-input {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+
+    @media (min-width: 768px) {
+      width: 95%;
+    }
+
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+
+    .input-task {
+      color: var(--background-color);
+      background-color: var(--input-background-color);
+      font-size: 15px;
+      border-radius: 6px;
+      border: none;
+      width: 75%;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      padding: 7px;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+        width: 80%;
+      }
+    }
+
+    .input-task:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .input-task_button {
+      background-color: var(--btn-background-color);
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      padding: 10px;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .container-tasks {
+    width: 90%;
+    margin: auto;
+
+    .tasks-list {
+      list-style: none;
+
+      .tasks-list_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--task-background-color);
+        margin: 20px 0;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+
+      .left {
+        display: flex;
+        align-self: center;
+
+        .checkbox-unchecked {
+          background-image: url(../image/unchecked.png);
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+          background-size: cover;
+          cursor: pointer;
+
+          @media (min-width: 768px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        .checkbox-checked {
+          background-image: url("../image/checked.png");
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+          background-size: cover;
+          cursor: pointer;
+
+          @media (min-width: 768px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .tasks-list_item.completed span {
+        text-decoration: line-through;
+        color: var(--line-through-color);
+      }
+
+      .tasks-button {
+        background-color: var(--btn-background-color);
+        font-size: 15px;
+        border: none;
+        border-radius: 6px;
+        padding: 7px;
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
