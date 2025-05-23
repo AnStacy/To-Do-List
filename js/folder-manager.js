@@ -88,7 +88,8 @@ export function addTask(taskText, completed = false) {
     saveTasksToStorage(currentFolder);
   });
 
-  taskList.appendChild(li);
+  // taskList.appendChild(li);
+  taskList.insertBefore(li, taskList.firstChild);
   saveTasksToStorage(currentFolder);
 }
 
