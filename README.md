@@ -1,9 +1,7 @@
 # ✅ TO DO LIST — Modern Task Manager
 
-![GitHub top language](https://img.shields.io/github/languages/top/AnStacy/To-Do-List)
-![GitHub license](https://img.shields.io/github/license/AnStacy/To-Do-List)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AnStacy/To-Do-List)
-![GitHub repo stars](https://img.shields.io/github/stars/AnStacy/To-Do-List?style=social)
+![GitHub license](https://img.shields.io/github/license/AnStacy/To-Do-List)
 
 A clean, intuitive, and responsive task management app. Organize your tasks with folders, check them off as completed, and keep everything saved in your browser. Simple and effective.
 
