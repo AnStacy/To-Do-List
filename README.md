@@ -1,12 +1,11 @@
 # ✅ TO DO LIST — Modern Task Manager
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/AnStacy/To-Do-List)
-![GitHub license](https://img.shields.io/github/license/AnStacy/To-Do-List)
+![GitHub repo size](https://img.shields.io/github/repo-size/AnStacy/Snake-Game)
 
 A clean, intuitive, and responsive task management app. Organize your tasks with folders, check them off as completed, and keep everything saved in your browser. Simple and effective.
 
-## ▶️ Getting Started
-https://anstacy.github.io/To-Do-List/
+Play the game here 👉 [Live Demo](https://anstacy.github.io/To-Do-List/)
 
 <img src="image/example.png" width="300" alt="Example task item" />
 
